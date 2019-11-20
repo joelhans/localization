@@ -137,6 +137,7 @@ sudo /etc/netdata/edit-config health_alarm_notify.conf
 -   添加新的通知方法，例如[Slack](../health/notifications/slack/)。
 
 ## Change how long Netdata stores metrics
+
 ## 更改Netdata存储指标的时间
 
 默认情况下，Netdata使用自定义数据库，该数据库同时使用RAM和磁盘来存储指标。 最近的度量标准存储在系统的RAM中，以保持快速访问，而历史度量标准则“堆积”到磁盘上，以保持较低的RAM使用率。
@@ -168,6 +169,7 @@ sudo /etc/netdata/edit-config health_alarm_notify.conf
 -   熟悉[节点视图](../docs/netdata-cloud/nodes-view.md)
 
 ## Start, stop, and restart Netdata
+
 ## 启动，停止和重新启动Netdata
 
 安装Netdata时，它被配置为在引导时启动，然后停止并重新启动/关闭。 您不需要手动启动或停止Netdata，但是您可能需要在某个时候重新启动Netdata。
