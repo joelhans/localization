@@ -32,18 +32,18 @@ Netdata主要使用`netdata.conf`文件进行自定义配置。
 默认情况下，大多数选项都带有注释，因此你必须取消注释（删除`＃`），Netdata 才能识别你的
 更改。
 
-保存更改后，请[重新启动 Netdata](getting-started.md＃start-stop-and-restart-netdata)加载新配置。
+保存更改后，请[重新启动 Netdata](#启动停止和重新启动netdata)加载新配置。
 
 **下一步是什么？**：
 
--   通过增加`历史记录`来[更改Netdata存储指标的时间](＃change-how-long-netdata-stores-metrics)选项或切换到数据库引擎。
+-   通过增加`历史记录`来[更改Netdata存储指标的时间](#更改netdata存储指标的时间)选项或切换到数据库引擎。
 -   将 Netdata 的仪表板移至[不同端口](https://docs.netdata.cloud/web/server/)或启用TLS / HTTPS加密。
 -   请参阅我们的[daemon配置文档](../daemon/config/)中的所有`netdata.conf`选项。
 -   运行自己的[注册表](../registry/README.md#run-your-own-registry)。
 
 ##从更多来源收集数据
 
-当Netdata启动时，它将自动检测数十个`数据源`，例如数据库服务器，Web服务器等。 要从刚刚安装的服务或应用程序中自动检测并收集指标，你需要[重新启动Netdata](＃start-stop-and-restart-netdata)。
+当Netdata启动时，它将自动检测数十个`数据源`，例如数据库服务器，Web服务器等。 要从刚刚安装的服务或应用程序中自动检测并收集指标，你需要[重新启动Netdata](#启动停止和重新启动netdata)。
 
 >有一个例外：Netdata在主机上运行时（例如不在容器本身中运行），它将始终自动检测容器和虚拟机。
 
@@ -136,8 +136,6 @@ sudo /etc/netdata/edit-config health_alarm_notify.conf
 -   使用[示例](../health/README.md#examples)编写你自己的健康警报。
 -   添加新的通知方法，例如[Slack](../health/notifications/slack/)。
 
-## Change how long Netdata stores metrics
-
 ## 更改Netdata存储指标的时间
 
 默认情况下，Netdata使用自定义数据库，该数据库同时使用RAM和磁盘来存储指标。 最近的度量标准存储在系统的RAM中，以保持快速访问，而历史度量标准则“堆积”到磁盘上，以保持较低的RAM使用率。
@@ -167,8 +165,6 @@ sudo /etc/netdata/edit-config health_alarm_notify.conf
 
 -   阅读有关[Netdata Cloud注册表的工作原理](../registry/)，以及它存储并发送到Web浏览器的数据类型的信息。
 -   熟悉[节点视图](../docs/netdata-cloud/nodes-view.md)
-
-## Start, stop, and restart Netdata
 
 ## 启动，停止和重新启动Netdata
 
