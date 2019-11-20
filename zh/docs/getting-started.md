@@ -32,7 +32,7 @@ Netdata主要使用`netdata.conf`文件进行自定义配置。
 默认情况下，大多数选项都带有注释，因此你必须取消注释（删除`＃`），Netdata 才能识别你的
 更改。
 
-保存更改后，请[重新启动 Netdata](＃start-stop-and-restart-netdata)加载新配置。
+保存更改后，请[重新启动 Netdata](getting-started.md＃start-stop-and-restart-netdata)加载新配置。
 
 **下一步是什么？**：
 
